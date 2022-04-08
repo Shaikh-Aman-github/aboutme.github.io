@@ -1,0 +1,28 @@
+{
+  "Certification": [
+    {
+      "name": "Frontend Development"
+    },
+    {
+     "name": "Web development" 
+    },
+    {
+      "name": "MERN Stack Development"
+    },
+    {
+      "name": "Software Development"
+    },
+    {
+      "name": "Mobile App development"
+    },
+    {
+      "name": "Responsive Web Development"
+    },
+    {
+      "name": "ReactJs/AngularJs"
+    },
+    {
+      "name": "FTCP level-4"
+    }
+  ]
+}
