@@ -1,0 +1,430 @@
+@import url("../font/font.css");
+@import url("otherStyle.css");
+
+body{
+    color: #fff;
+    text-align: center;
+    background-image: url("../images/bg.jpg");
+    cursor: url("../images/Fluoro.cur"),auto;
+  }
+
+a, button, i, .btn {
+  cursor: url("../images/hand.cur"),auto;
+}  
+.moreButtonContent{
+  color: #000;
+}
+.close{
+  background-color: #000;
+  color: #ddd;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: none;
+}
+.heading{
+    color: black;
+    text-align: center;
+    font-family: "D";
+    background-color: #ddd;
+    border-radius: 0 0 10px 10px;
+}
+.redmorebtn{
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.redmorebtn:hover{
+    background-color: #000;
+    color: #ddd;
+}
+/*-------------------------------------------top NavBar css-------------------------------------------*/
+.topnavbar{
+    width: 100%;
+    border-radius:50px;
+}
+.navhead{
+  text-align: center;
+	font-size: 45px;
+	font-family: Showcard Gothic;
+    text-shadow: 1px 2px #aaa;
+    background-color:#000;
+    border-radius: 20px;
+}
+.logoimg{
+	border-radius:50%;
+	height: 50px;
+	position: fixed;
+	right:10px;
+	top:0;
+  animation: mymove 1s infinite;
+	cursor:pointer;
+}
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 10px;}
+  75%  {top: 0px}
+  100% {top: 10px;}
+}
+.navmenu{
+    position: fixed;
+    height: 50px;
+    top: 0;
+    left: 0;
+    width: 50px;
+    float: right;
+    color: #000;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+ .navmenu:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*-------------------------------------------About css-------------------------------------------*/
+.topfont{
+  text-align:center;
+  width: 100%;
+	font-size: 50px;
+	font-family: Showcard Gothic;
+	text-shadow: 1px 2px #ddd;
+}
+
+/*-------------------------------------------Experienc css-------------------------------------------*/
+  .timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+  }
+  .timeline:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: "";
+    background-color: #e9ecef;
+  }
+  .timeline > li {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+  }
+  .timeline > li:after, .timeline > li:before {
+    display: table;
+    content: " ";
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .timeline > li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid #e9ecef;
+    border-radius: 100%;
+    background-color: #fed136;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 10px;
+    line-height: 14px;
+    margin-top: 12px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+  }
+  .timeline > li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+  }
+  .timeline .timeline-heading h4.subheading {
+    text-transform: none;
+  }
+  .timeline .timeline-body > ul,
+  .timeline .timeline-body > p {
+    margin-bottom: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline:before {
+      left: 50%;
+    }
+    .timeline > li {
+      min-height: 100px;
+      margin-bottom: 100px;
+    }
+    .timeline > li .timeline-panel {
+      float: left;
+      width: 41%;
+      padding: 0 20px 20px 30px;
+      text-align: right;
+    }
+    .timeline > li .timeline-image {
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: -50px;
+    }
+    .timeline > li .timeline-image h4 {
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 16px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      float: right;
+      padding: 0 30px 20px 20px;
+      text-align: left;
+    }
+  }
+  @media (min-width: 992px) {
+    .timeline > li {
+      min-height: 150px;
+    }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px;
+    }
+    .timeline > li .timeline-image {
+      width: 150px;
+      height: 150px;
+      margin-left: -75px;
+    }
+    .timeline > li .timeline-image h4 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 30px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 20px 20px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .timeline > li {
+      min-height: 170px;
+    }
+    .timeline > li .timeline-panel {
+      padding: 0 20px 20px 100px;
+    }
+    .timeline > li .timeline-image {
+      width: 170px;
+      height: 170px;
+      margin-left: -85px;
+    }
+    .timeline > li .timeline-image h4 {
+      margin-top: 40px;
+    }
+    .timeline > li.timeline-inverted > .timeline-panel {
+      padding: 0 100px 20px 20px;
+    }
+  }
+  .team-member {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  }
+  .team-member h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+/*-------------------------------------------Certification css-------------------------------------------*/
+.certi-card{
+  margin: 5px;
+  padding: 10px 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 20px;
+}
+
+/*-------------------------------------------Skills & Programming css-------------------------------------------*/
+#skills-card{
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 0 20px;
+    background-color: rgb(0, 0, 0);
+    position: inherit;
+}
+#skills-card:hover{
+    border-radius: 20px 0; 
+    margin-top: 10px;
+}
+.card-body{
+    text-align: center;
+    font-family: "B";
+}
+
+/*-------------------------------------------Projects css-------------------------------------------*/
+#project-card{
+	border-radius: 15px;
+	background-color:transparent;
+}
+.projects-box{
+    margin-top: 20px;
+}
+.reviews-slider{
+    background-color: transparent;
+}
+#review_slider_content li .card{
+    text-align: center;
+}
+#review_slider_content li .card img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+#review_slider_content li .card .card-title{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+#review_slider_content li .card .card-text{
+    font-size: 14px;
+    
+}
+#review_slider_content li .card .card-body{
+    height: 200px;
+}
+
+/*-------------------------------------------Other Projects css-------------------------------------------*/
+#others-project{
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius: 15px;
+}
+.other-project-img{
+	height: 400px;
+}
+.colordiv{
+	margin: 5px;
+	border-radius: 20px;
+	background-image: url(../images/bg.jpg);
+  position: inherit;
+}
+/*project img*/
+#project1{
+  border-radius: 15px;
+  background-image: url(../images/pic/thumb0.JPG);
+  background-size: cover;
+}
+#project2{
+  border-radius: 15px;
+  background-image: url(../images/pic/thumb3.JPG);
+  background-size: cover;
+}
+#project3{
+  border-radius: 15px;
+  background-image: url(../images/pic/thumb2.JPG);
+  background-size: cover;
+}
+#project4{
+  border-radius: 15px;
+  background-image: url(../images/pic/thumb1.JPG);
+  background-size: cover;
+}
+/*-------------------------------------------Footer css-------------------------------------------*/
+#footer-content{
+	padding: 10px;
+	font-family: Showcard Gothic;
+	border-radius: 10px 10px 0 0;
+	color:#fff;
+	text-align:center;
+	background-color:rgba(221, 221, 221, 0.089);	
+}
+#footer-media a{
+    text-decoration: none;
+    color:#fff;
+    padding: 2px;
+	  display:inline;
+    font-size: 25px;
+}
+#footer-media a:hover{
+    color: #000;
+    font-size: 35px;
+}
+/*
+#form-container{
+  margin-bottom: 10px;
+  padding: 10px;
+	background-color:#ddd;
+	font-family: Showcard Gothic;
+	border-radius:10px;
+	color:#000;
+	text-align:center;
+	text-shadow: 1px 2px #ddd;
+}
+/* Full-width input fields *
+input[type=text], input[type=text], input[type=password], input[type=text] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 360px;
+	  font-family: Showcard Gothic;
+}
+input[type=text]:focus, input[type=text]:focus, input[type=password]:focus, input[type=text]:focus {
+  height: 40px;
+	background-color: #aaa;
+  outline: none;
+}
+
+/* Set a style for the submit button *
+.btn2{
+  font-family: Showcard Gothic;
+  color: #000;
+	background-color:fff;
+  padding: 10px;
+  border: none;
+	outline: none;
+	border-radius: 360px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(230, 229, 229, 0.514);
+}
+.btn2:hover {
+  color: #fff;
+	background-color: #aaa;
+}*/
+
