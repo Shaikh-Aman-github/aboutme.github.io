@@ -228,7 +228,6 @@ function headingAnime() {
             anime();
         }
     }
-
     // For Tablet Device
     else if (bodyWidth > 741 && bodyWidth < 866) {
        if (sectionTop > 6450) {
